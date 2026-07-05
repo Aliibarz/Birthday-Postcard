@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Postcard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music/piano.mp3" type="audio/mp3">
+</audio>
+
+<!-- TOP MUSIC TITLE -->
+<div id="musicTitle">♪ Last October</div>
+
+<!-- START SCREEN -->
+<div id="startScreen">
+  <h1>🎉 Happy Birthday 🎉</h1>
+  <button id="beginBtn">Begin</button>
+</div>
+
+<!-- SLIDES CONTAINER -->
+<div id="slider" class="hidden">
+
+  <div class="slide active"><img src="images/photo1.jpg"></div>
+  <div class="slide"><img src="images/photo2.jpg"></div>
+  <div class="slide"><img src="images/photo3.jpg"></div>
+  <div class="slide"><img src="images/photo4.jpg"></div>
+  <div class="slide"><img src="images/photo5.jpg"></div>
+  <div class="slide"><img src="images/photo6.jpg"></div>
+  <div class="slide"><img src="images/photo7.jpg"></div>
+  <div class="slide"><img src="images/photo8.jpg"></div>
+  <div class="slide"><img src="images/photo9.jpg"></div>
+  <div class="slide"><img src="images/photo10.jpg"></div>
+  <div class="slide"><img src="images/photo11.jpg"></div>
+
+  <!-- FINAL SLIDE -->
+  <div class="slide final">
+    <img src="images/photo12.jpg">
+
+    <div class="final-box">
+      <h2>Happy Birthday ❤️</h2>
+
+      <button onclick="playSong('music/song1.mp3')">Play Song 1</button>
+      <button onclick="playSong('music/song2.mp3')">Play Song 2</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- NAVIGATION -->
+<div id="controls" class="hidden">
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
